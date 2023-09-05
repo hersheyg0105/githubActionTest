@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Main branch
-        run: actions/checkout@v3
+        run: actions/checkout@v2
       - name: Show Directory Files
         run: ls
       - name: Run Python Command
