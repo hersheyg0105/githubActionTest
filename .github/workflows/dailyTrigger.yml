@@ -13,6 +13,6 @@ jobs:
       - name: Checkout Main branch
         uses: actions/checkout@v3
       - name: Show Directory Files
-        run: ls
+        run: dir
       - name: Run Python Command
         run: python3 hello.py
