@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Main branch
-        run: actions/checkout@v3
+        run: action/checkout@v3
       - name: Run Python Command
         run: python3 hello.py
