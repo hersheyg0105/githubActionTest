@@ -2,7 +2,7 @@ name: Daily Trigger
 
 on:
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     
 
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Main branch
-        run: action/checkout@v3
+        run: actions/checkout@v3
       - name: Show Directory Files
         run: ls
       - name: Run Python Command
