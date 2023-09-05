@@ -1,0 +1,14 @@
+name: Daily Trigger
+
+on:
+  schedule:
+    - cron: '*/2 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Main branch
+        run: actions/checkout@v3
+      - name: Run Python Command
+        run: python3 hello.py
